@@ -84,6 +84,8 @@ pip install -r requirements.txt
 
 ### DOCKER
 
+#### First method
+
 ###### build the image
 docker build -t transner-api .
 
@@ -95,3 +97,12 @@ docker ps
 docker stop mediaverse_transner
 docker rm mediaverse_transner
 docker rmi transner-api
+
+#### Second method
+docker-compose up -d
+
+###### remove container and image
+docker-compose down
+docker rmi transner_web
+
+
